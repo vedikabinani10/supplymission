@@ -6,7 +6,7 @@ class Box{
         this.body=Bodies.rectangle(x,y,width,height,options);
         this.width=width;
         this.height=height;
-        Matter.Body.setStatic(this.body,true);
+        Matter.Body.setStatic(this.body,false);
         World.add(world,this.body);
     }
     display(){
